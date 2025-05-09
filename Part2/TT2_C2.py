@@ -4,7 +4,6 @@ from math import sqrt
 
 def factor(number):
     lst = TT1_C2.Eratos2(int(sqrt(number)))
-    lst.reverse()
     list_factor = []
     for i in lst:
         while number % i == 0:
@@ -14,4 +13,3 @@ def factor(number):
             break
     if number != 1: list_factor.append(number)
     return list_factor
-print(factor(223556))
