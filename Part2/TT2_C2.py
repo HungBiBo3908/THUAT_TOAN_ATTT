@@ -12,6 +12,6 @@ def factor(number):
             number = number/i
         if number == 1:
             break
-    print(list_factor)
+    return list_factor
 print(factor(4337800))
 
