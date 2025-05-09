@@ -1,8 +1,6 @@
 #tính nghịch đảo và UCLN
 #thuật toán cần xem loại x1%p chưa tối ưu
 
-import math
-
 def EClide_Pro(a0,b0):
     if b0 > a0:
         tmp = a0

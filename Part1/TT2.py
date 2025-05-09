@@ -1,7 +1,5 @@
 #Cong tru chinh xac boi
 
-import math
-
 def Cong_boi(a,b,W,t):
     c_plus = [0]*t
     e = 0

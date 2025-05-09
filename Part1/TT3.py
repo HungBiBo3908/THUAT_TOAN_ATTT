@@ -1,12 +1,12 @@
 # Cộng trừ trên trường Fp
-import math
+from math import ceil, log2
 import TT1
 import TT2
 
 def Cong_Fp(a,b,p,W):
     Plus_Fp = []
-    m = math.ceil(math.log2(p))
-    t = math.ceil(m/W)
+    m = ceil(log2(p))
+    t = ceil(m/W)
     if (type(a) != list):
         a = TT1.BieuDien_num_to_LST(a,p,W)
     if (type(b) != list):
@@ -23,8 +23,8 @@ def Cong_Fp(a,b,p,W):
     return Plus_Fp
 
 def Tru_Fp(a,b,p,W):
-    m = math.ceil(math.log2(p))
-    t = math.ceil(m/W)
+    m = ceil(log2(p))
+    t = ceil(m/W)
     if (type(a) != list):
         a = TT1.BieuDien_num_to_LST(a,p,W)
     if (type(b) != list):

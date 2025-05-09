@@ -1,9 +1,9 @@
 #Chia so ve mang va nguoc lai
-import math
+from math import ceil,log2
 
 def BieuDien_num_to_LST(a, p, W):
-    m = math.ceil(math.log2(p))
-    t = math.ceil(m/W)
+    m = ceil(log2(p))
+    t = ceil(m/W)
     lst = [None] * t
     for i in range (0,t):
         He_So = pow(2,W*(t-i-1))
