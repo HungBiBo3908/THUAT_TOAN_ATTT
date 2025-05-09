@@ -13,4 +13,5 @@ def factor(number):
         if number == 1:
             break
     print(list_factor)
+print(factor(4337800))
 
