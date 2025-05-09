@@ -1,9 +1,8 @@
 #phân tích thừa số nguyên tố
 import TT1_C2
-from math import sqrt
 
 def factor(number):
-    lst = TT1_C2.Eratos2(int(sqrt(number)))
+    lst = TT1_C2.Eratos2((number))
     lst.reverse()
     list_factor = []
     for i in lst:
@@ -13,5 +12,4 @@ def factor(number):
         if number == 1:
             break
     return list_factor
-print(factor(4337800))
 
