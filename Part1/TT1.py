@@ -27,6 +27,12 @@ def BieuDien_Lst_to_Num(lst: list, p, W):
         num += lst[i] * pow(2, W*(len(lst)-i-1))
     return num
 
+def nhapMang(n):
+    lst = []
+    for i in range(n):
+        num = int(input())
+        lst.append(num)
+    return lst
 #p =2147483647    
 #list1 = BieuDien_LST_bit(23456789,p,8)
 #print(list1)

@@ -14,7 +14,6 @@ def Eratos(last):
 
 def Eratos2(last):
     chia_list = int(sqrt(last))
-    count = 1
     c = Eratos(chia_list-1)
     for i in range (chia_list,last+1,chia_list): #chạy từng cặp (chia_list) số từ 0 đến last
         check_max = i+chia_list
@@ -26,10 +25,10 @@ def Eratos2(last):
                 m = int((check_max-1)/j)
                 n = ceiling(i/j)
                 for k in range(n,m+1): #chặn đầu đít của bội số nguyên tố trong bộ số a.
-                    a[j*k-chia_list*count] = 0 #sửa hết phần tử là bội thành 0
+                    if a[j*k-i] != 0:
+                        a[j*k-i] = 0 
             else: break
         for j in a:
             if j != 1 and j!= 0:
                 c.append(j)
-        count += 1
     return c
