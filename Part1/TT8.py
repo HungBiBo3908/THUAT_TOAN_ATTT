@@ -41,5 +41,15 @@ def Invert_Fp(a,p):
         return x1 + p
     return x1
 
+def Euclid(a,b):
+    if a < b:
+        tmp = a 
+        a = b
+        b = tmp
+    while b > 0:
+        r = a % b
+        a = b
+        b = r
+    return a
 #print(Invert_Fp(8,31))
 #print(EClide_Pro(1759,550))
