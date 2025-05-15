@@ -1,5 +1,4 @@
 # Thuật toán Miller_rabin
-from math import pow
 from TT3_C2 import multi2_mod
 from random import randint
 
@@ -7,7 +6,7 @@ def Tach(n): #Tach n = 2^s * r
     count = 0
     while n%2 == 0:
         count += 1
-        n = n/2
+        n = int(n/2)
     return [count, n]
         
 def Mileer_Rabin(n,t):
@@ -31,3 +30,4 @@ def Mileer_Rabin(n,t):
             if y != (n-1):
                 return False
     return True
+print(Mileer_Rabin(17,5))
