@@ -30,4 +30,3 @@ def Mileer_Rabin(n,t):
             if y != (n-1):
                 return False
     return True
-print(Mileer_Rabin(17,5))
