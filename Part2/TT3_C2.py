@@ -1,4 +1,4 @@
-# Bình phương có lặp
+# Bình phương có lặp (a^p mod n)
 from math import log2
 def nhi_phan(p):
     length = int(log2(p)) + 1
